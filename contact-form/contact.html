@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+    <title>Contact Manish Contractors</title>
+</head>
+
+<body>
+     
+    <a href="../index.html"><div class="put-logo-in"></div></a>
+
+    <h2 class="content-head">Contact Us!</h2>
+
+
+    
+    <link rel="stylesheet" href="pure.css">
+    <!-- START HERE --> 
+    <link rel="stylesheet" href="style.css">
+
+
+    <form class="gform pure-form pure-form-stacked shift-form" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwRlrpsBBwFPqYKS-GCNdAtZxwjBMfGAf-xZxYd6Q/exec">
+        <!-- change the form action to your script url -->
+        <div class="form-elements form-inside">
+            <fieldset class="pure-group fieldset1">
+                <label for="name">Name: </label>
+                <input id="name" name="name" placeholder="What your Mom calls you" />
+            </fieldset>
+
+            <fieldset class="pure-group fieldset2">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="10" placeholder="Tell us what's on your mind..."></textarea>
+            </fieldset>
+
+            <fieldset class="pure-group fieldset3">
+                <label for="email"><em>Your</em> Email Address:</label>
+                <input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
+                <span class="email-invalid" style="display:none">
+          Must be a valid email address</span>
+            </fieldset>
+        <button class="btn btn-full">
+                Send</button>
+        </div>
+    </form>
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <!-- END -->
+
+</body>
+
+</html>
